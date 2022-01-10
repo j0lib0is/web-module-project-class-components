@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import './components/Todo.css';
+
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
 
@@ -26,8 +29,20 @@ class App extends React.Component {
     })
   };
 
-  handleToggle = () => {
-    // toggle task completion
+  handleToggle = (clickedItem) => {
+    this.setState({
+      ...this.state,
+      todos: this.state.todos.map(item => {
+        if(item.id === clickedItem.id) {
+          return({
+            ...item,
+            completed: !item.completed,
+          })
+        } else {
+          return item;
+        }
+      })
+    })
   };
 
   handleClear = () => {
@@ -38,7 +53,7 @@ class App extends React.Component {
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
-        <TodoList todos={this.state.todos} />
+        <TodoList todos={this.state.todos} handleToggle={this.handleToggle} />
         <TodoForm handleAdd={this.handleAdd} />
       </div>
     );
