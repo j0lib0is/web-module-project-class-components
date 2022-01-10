@@ -46,7 +46,12 @@ class App extends React.Component {
   };
 
   handleClear = () => {
-    // clear completed tasks
+    const clearedList = this.state.todos.filter(item => item.completed === false);
+
+    this.setState({
+      ...this.state,
+      todos: clearedList,
+    });
   };
 
   render() {
@@ -55,6 +60,7 @@ class App extends React.Component {
         <h2>Welcome to your Todo App!</h2>
         <TodoList todos={this.state.todos} handleToggle={this.handleToggle} />
         <TodoForm handleAdd={this.handleAdd} />
+        <button onClick={this.handleClear}>Clear Completed</button>
       </div>
     );
   }
