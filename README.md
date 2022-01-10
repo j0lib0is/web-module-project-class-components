@@ -17,7 +17,7 @@ In this project you will build an application that allows for todos to be added,
 
 ![Todo App MVP](./todo.gif)
 
--   Hold all todos in state within the App.js component. That todos state slice should look like the following:
+-   [x] Hold all todos in state within the App.js component. That todos state slice should look like the following:
 
 ```js
 [
@@ -34,9 +34,9 @@ In this project you will build an application that allows for todos to be added,
 ];
 ```
 
--   Allow for a todo to be toggled when clicking on an item.
--   Allow for a todo be be added when submitting the todo form component.
--   Allow for completed todos to be cleared when clicking the clear completed button.
+-   [x] Allow for a todo to be toggled when clicking on an item.
+-   [x] Allow for a todo be be added when submitting the todo form component.
+-   [x] Allow for completed todos to be cleared when clicking the clear completed button.
 
 **_Make sure to complete your tasks one at a time and complete test each task before proceding forward._**
 
@@ -54,16 +54,16 @@ In this project you will build an application that allows for todos to be added,
 
 -   **Don't focus on styling yet**. We want you to worry about function over form today.
 -   **Build all components as class components.**
--   Your todo list should display a list of todos, an input field, a submit button, and a clear all button.
--   Be sure to use the given files for building out these components.
--   `<App />` will hold all the data needed for this project. It will also be the container for your Todo Components.
-    -   All of your application data will be stored here on `<App />`.
-    -   All of your `handler` functions should live here on `<App />`.
--   `<TodoList />` receives your Todos array and iterates over the list generating a new `<Todo />` for each element in the array.
--   `<Todo />` is a component that takes in the `todo` data and displays the task to the screen.
--   `<TodoForm>` will hold your input field and your `Add Todo` and `Clear Completed` buttons.
-    -   Your input field should take in user input, and allow a user to press `Enter` or click on the `Submit Button` to add a todo to your list.
-    -   Once a todo is submitted, the Todo List should re-render and show the added todo.
+-   [x] Your todo list should display a list of todos, an input field, a submit button, and a clear all button.
+-   [x] Be sure to use the given files for building out these components.
+-   [x] `<App />` will hold all the data needed for this project. It will also be the container for your Todo Components.
+    -   [x] All of your application data will be stored here on `<App />`.
+    -   [x] All of your `handler` functions should live here on `<App />`.
+-   [x] `<TodoList />` receives your Todos array and iterates over the list generating a new `<Todo />` for each element in the array.
+-   [x] `<Todo />` is a component that takes in the `todo` data and displays the task to the screen.
+-   [x] `<TodoForm>` will hold your input field and your `Add Todo` and `Clear Completed` buttons.
+    -   [x] Your input field should take in user input, and allow a user to press `Enter` or click on the `Submit Button` to add a todo to your list.
+    -   [x] Once a todo is submitted, the Todo List should re-render and show the added todo.
 
 ## Submission Format
 
