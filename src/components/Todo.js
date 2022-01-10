@@ -2,7 +2,9 @@ import React from 'react';
 
 const Todo = props => {
 	return (
-		<p>Hello world!</p>
+		<div>
+			<p>{props.item.name}</p>
+		</div>
 	);
 }
 

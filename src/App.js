@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom';
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
 
-const todos = [];
+const todos = [
+  {name: 'take out garbage', id: 1234},
+  {name: 'do the dishes', id: 1235}
+];
 
 class App extends React.Component {
   // ✅ You will need a place to store your state in this component.
@@ -32,7 +35,7 @@ class App extends React.Component {
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
-        <TodoList />
+        <TodoList todos={this.state.todos}/>
       </div>
     );
   }
